@@ -1,0 +1,539 @@
+@charset "utf-8";
+@import url("common.css");
+
+body {
+    background-color: #222;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.title {
+    color: crimson;
+}
+p {
+    font-size: 0.7em;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 100%;
+    background-color: rgba(5, 4, 4, 0.877);
+}
+.flex-container {
+    background-color: rgba(5, 4, 4, 0.877);
+}
+.flex-container2 {
+    display: flex;
+}
+.sub-title {
+    /* color: crimson; */
+    color: lightseagreen;
+
+}
+
+
+.color {
+    width: 320px;
+    height: 48px;
+    background-color: rgb(32, 32, 54);
+}
+
+.inner-container {
+    max-width: 824px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.sub-title {
+    line-height: 48px;
+}
+
+.space {
+    display: none;
+}
+
+.inview .space { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: accordion;
+    animation-duration: 0.5s;
+    transition: all 0.5s;
+    transform-origin: top;
+}
+
+
+
+@keyframes accordion {
+
+    0% {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+#id, #name, #fstCategory, #sec-category, #button3, #button4,
+#button, #password, #check, #message, #search {
+
+    cursor: pointer;
+}
+
+
+/* ヘッダー　///////////////////////////////////////////////// */
+
+header {
+    background-color: rgb(32, 32, 54);
+    color: lightseagreen;
+    width: 100%;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    z-index: 20;
+
+
+}
+
+/* 掲示板のメニュー/////////////////////////////////////////// */
+.js-on-off {
+    display: block;
+}
+
+.inner-title {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    max-width: 824px;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    /* color: crimson; */
+    color: lightseagreen;    
+}
+
+.sticky {
+    top: 32px;
+    position: sticky;
+    z-index: 20;
+}
+
+.home-title {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    max-width: 824px;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    /* color: crimson; */
+    color: lightseagreen;
+}
+
+.color {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.tit {
+    position: absolute;
+    margin-left: 20px;
+    /* color: #fff; */
+    cursor: pointer;
+    /* color: crimson; */
+    color: lightseagreen;
+}
+
+.change {
+    position: absolute;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+}
+.open-close {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid lightseagreen;
+    border-right: 2px solid lightseagreen;
+    transform: rotate(45deg);
+}
+ .open-close.active {
+    transform: rotate(135deg);
+}
+
+#space1, #space2, #space3 {
+    padding-left: 24px;
+    padding-top: 16px;
+}
+
+
+
+/*  記事の検索　/////////////////////////////////////////////*/
+button {
+    width: 40px;
+    height: 24px;
+    font-size: 0.7em;
+}
+#space1 {
+    height: 130px;
+    background-color: rgb(48, 43, 43);
+}
+
+
+/* 記事の書き込み　////////////////////////////////////////// */
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+dl {
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+
+.dt1, .dt2, .dt3, .dt4 {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    height: 24px;
+}
+.dd1, .dd2, .dd3, .dd4 {
+    margin-left: 0;
+    margin-bottom: 2px;
+    width: 70%;
+}
+input {
+    width: 160px;
+    height: 24px;
+}
+
+select {
+    width: 168px;
+    height: 24px;
+}
+
+.posting-message {
+    width: 240px;
+    height: 88px;
+}
+
+#space2 {
+    background-color: rgb(48, 43, 43);
+    height: 240px;
+}
+.btn2 {
+    width: 60px;
+    height: 24px;
+    margin-left: 110px;
+}
+
+/*　記事の削除   //////////////////////////////////////////////*/
+.dt5,.dt6,.dt7 {
+    /* width: 15%; */
+    height: 24px;
+    display: flex;
+    align-items: center;
+} 
+
+.dd5, .dd6, .dd7 {
+    margin-left: 0;
+    margin-bottom: 2px;
+    width: 70%;
+}
+#space3 {
+    background-color: rgb(48, 43, 43);
+
+    height: 160px;
+}
+
+.on-off {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    height: 24px;
+}
+#check {
+    width: 16px;
+    height: 16px;
+    margin-left: 0;
+}
+
+.dd7 {
+    height: 40px;
+}
+
+#space3 {
+    margin-bottom: 16px;
+}
+
+#button4 {
+    margin-left: 52px;
+}
+@media screen and (max-width: 768px) {
+    #button4 {
+        margin-left: 0;
+    }
+    
+}
+
+
+
+/*  記事一覧　////////////////////////////////////////////////*/
+.inner-title2 {
+    max-width: 824px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* padding-bottom: 24px;    */
+    height: 24px;    
+}
+/* .id, .date, .name, .categoley, .sub-categoley, .message {
+    height: 24px;
+} */
+
+.sticky2 {
+    top: 192px;
+    position: sticky;
+    z-index: 10;
+}
+.timeline {
+    /* color: crimson; */
+    color: lightseagreen;
+    /* top: 192px;
+    position: sticky; */
+    
+    
+}
+.searchWord {
+    /* color: crimson; */
+    color: lightseagreen;
+    /* position: sticky;
+    top: 200px; */
+    
+}
+.discription2 {
+    background-color: rgb(32, 32, 54);
+    /* color: #fff; */
+    /* color: crimson; */
+    color: lightseagreen;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.discription3 {
+    background-color: rgb(32, 32, 54);
+    /* color: #fff; */
+    /* color: crimson; */
+    color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+}
+
+.id {
+    flex-grow: 3;
+    border: #CCC  solid 1px;
+    width: 40px;
+    /* padding: 8px 8px 8px 8px; */
+}
+.date {
+    flex-grow: 4;
+    border: #CCC  solid 1px;
+    width: 200px;
+}
+
+.name {
+    flex-grow: 3;
+    border: #CCC  solid 1px;
+    width: 72px;
+}
+
+.category {
+    flex-grow: 7;
+    border: #CCC  solid 1px;
+    width: 160px;
+
+}
+
+.sub-category {
+    flex-grow: 5;
+    border: #CCC  solid 1px;
+    width: 180px;
+}
+
+.inner-title2 .message {
+    flex-grow: 3;
+    border: #CCC  solid 1px;
+    width: 320px;
+
+}
+.flex-container {
+    display: flex;
+    overflow: hidden;
+    z-index: 10;
+} 
+
+
+.red {
+    text-align: center;
+    margin: 0 auto;
+}
+.varid {
+    color: rgb(57, 209, 57);
+    margin-bottom: 16px;   
+}
+.searchD {
+    display: flex;
+}
+
+.underline {
+    font-size: 1.2em;
+    text-decoration: underline;
+    font-weight: bold
+}
+
+
+
+.deteal {
+    /* height: 64px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    padding: 8px 8px 8px 8px;
+}
+
+.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    /* display: block; */
+}
+
+
+#id {
+    flex-grow: 2;
+    border: #CCC  solid 1px;
+    width: 40px;
+}
+#date {
+    flex-grow: 4;
+    border: #CCC  solid 1px;
+    width: 200px;
+}
+
+#name {
+    flex-grow: 3;
+    border: #CCC  solid 1px;
+    width: 72px;
+}
+
+#category {
+    flex-grow: 7;
+    border: #CCC  solid 1px;
+    width: 160px;
+}
+
+#subCategory {
+    flex-grow: 5;
+    border: #CCC  solid 1px;
+    width: 180px;
+}
+
+#message {
+    flex-grow: 3;
+    border: #CCC  solid 1px;
+    width: 320px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    dl {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dt1, .dt2, .dt3, .dt4, .dt5, .dt6 {
+        width: 70%;
+    }
+
+    .inview #space2 {
+        height: 400px;
+    }
+    .inview #space3 {
+        height: 240px;
+    }
+    .btn2, #btn3 {
+        margin-left: 0;
+    }
+       
+}
+
+@media screen and (max-width: 600px) {
+    .inner-title2 {
+        display: none;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    
+    .caption {
+        justify-content: flex-start;
+    }
+    #id, #date, #name, #category, #subCategory, #message {
+        width: 100%;
+    }
+    
+    .inview #space3 {
+        height: 320px;
+    }
+    #id, #date, #name, #category, #subCategory {
+        border: none;
+    }
+    /* .name, .id {
+        height: 24px;
+    } */
+    
+    
+}
+
+
+
+
+/* フッター　////////////////////////////////////////////////// */
+
+footer { 
+    position: sticky !important;
+    bottom: 0;
+    max-width: 1600px;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(32, 32, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+.copy {
+    color: crimson;
+
+}
