@@ -16,8 +16,8 @@ try {
         $password = $_POST['password'];
     }
  }
-
-    require_once('./DBInfo.php');
+                require_once __DIR__ . '/../../config/DBInfo.php';
+             // require_once('./DBInfo.php');
                 $pdo = new PDO(DBInfo::DSN, DBInfo::USER, DBInfo::PASSWORD);
                 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);     
 
